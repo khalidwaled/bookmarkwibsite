@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&display=swap"
+        rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="d-flex  justify-content-center mt-5">
+            <span class=" for-shadow">
+                <h1 class="">Bookmarker</h1><span></span>
+
+
+        </div>
+    </section>
+    <div class="d-flex justify-content-center align-items-center dashe-line"></div>
+
+    <div class="h2-stayl text-center  m-5">
+        <h2 class="fs-3">
+            <i class=" fa-solid fa-bookmark color"></i>
+            "Bookmark your favorite sites"
+            <i class="fa-solid fa-bookmark colo"></i>
+
+        </h2>
+    </div>
+<div>
+    <div class="site-name w-75 m-auto d-flex flex-column justify-content-center">
+        <label for="bookmarkName" class="pb-2 fw-semibold">
+          <i class="fa-solid fa-book-bookmark pe-2"></i>
+          Site Name</label>
+        <input oninput="validatinput()" type="text" placeholder="Bookmark Name" class="form-control is-invalid" id="bookmarkName">
+      </div>
+      <div class="site-url m-auto mt-4 w-75 d-flex flex-column justify-content-center">
+        <label for="bookmarkURL" class="pb-2 fw-semibold">
+          <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+        <input oninput="validatinput()" type="url" placeholder="Website URL" class="form-control is-invalid" id="bookmarkURL">
+        <button   class=" bt-styel btn btn-submit m-auto px-5 mt-4" id="submitBtn">Submit</button>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center dashe-line2"></div>
+    
+</div>
+<table class="w-75 container table mt-4 text-center bg-light">
+    <thead>
+      <tr><th class="text-capitalize">index</th>
+      <th class="text-capitalize">Website Name</th>
+      <th class="text-capitalize">Visit</th>
+      <th class="text-capitalize">Delete</th>
+    </tr></thead>
+    <tbody id="tableContent"></tbody>
+  </table>
+<!-- ============================================ -->
+
+<script src="./JS/index.js"></script>
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/bootstrap.bundle.js"></script>
+    
+</body>
+
+</html>
+
